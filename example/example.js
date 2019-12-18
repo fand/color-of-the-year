@@ -1,4 +1,6 @@
 import { colors, yearOfTheColor } from "..";
+// const { colors, yearOfTheColor } = require("..");
+
 import Color from "color";
 
 const body = document.querySelector("body");

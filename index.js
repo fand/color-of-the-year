@@ -1,4 +1,4 @@
-export const colors = {
+const colors = {
   classicBlue: "#174374",
   livingCoral: "#FA6558",
   ultraViolet: "#5D4F89",
@@ -23,7 +23,7 @@ export const colors = {
   cerulean: "#A3B7D2"
 };
 
-export const colorOfTheYear = {
+const colorOfTheYear = {
   2000: [colors.cerulean],
   2001: [colors.fuchsiaRose],
   2002: [colors.trueRed],
@@ -48,7 +48,7 @@ export const colorOfTheYear = {
   2020: [colors.classicBlue]
 };
 
-export const yearOfTheColor = {
+const yearOfTheColor = {
   cerulean: 2000,
   fuchsiaRose: 2001,
   trueRed: 2002,
@@ -74,7 +74,8 @@ export const yearOfTheColor = {
   classicBlue: 2020
 };
 
-export default {
-  ...colors,
-  ...colorOfTheYear
+module.exports = {
+  colors,
+  colorOfTheYear,
+  yearOfTheColor
 };
