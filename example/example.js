@@ -3,7 +3,7 @@ import { colors, yearOfTheColor } from "..";
 
 import Color from "color";
 
-const body = document.querySelector("body");
+const wrapper = document.querySelector("#wrapper");
 const main = document.querySelector("main");
 const header = document.querySelector("header");
 const footer = document.querySelector("footer");
@@ -16,7 +16,7 @@ const update = () => {
   const key = keys[(Math.random() * keys.length) | 0];
   const color = colors[key];
 
-  body.style.backgroundColor = color;
+  wrapper.style.backgroundColor = color;
   main.style.color = color;
 
   const keyColor = Color(color).contrast(white) < 2 ? "#333333" : "white";
